@@ -5,17 +5,21 @@ class Veiculo:
     def descricao(self):
         return f"{self.__class__.__name__}: {self.dirigir()}"
 
+
 class Carro(Veiculo):
     def dirigir(self):
-        return "Dirigindo!"
+        return "O carro está em movimento"
+
 
 class Moto(Veiculo):
     def dirigir(self):
-        return ""
+        return "A moto está acelerando"
+
 
 class Caminhao(Veiculo):
     def dirigir(self):
-        return ""
+        return "O caminhão está na estrada"
+
 
 # Programa principal
 veiculos = [Carro(), Moto(), Caminhao()]
